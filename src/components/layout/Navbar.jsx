@@ -44,8 +44,8 @@ const Navbar = () => {
       <nav
         className={`relative w-full rounded-2xl border transition-all duration-300 px-6 py-3.5 md:py-4 flex items-center justify-between ${
           scrolled
-            ? 'bg-white/80 dark:bg-zinc-900/80 backdrop-blur-lg border-zinc-200/80 dark:border-zinc-800/80 shadow-md shadow-zinc-250/10 dark:shadow-none'
-            : 'bg-white/40 dark:bg-zinc-900/40 backdrop-blur-md border-zinc-205/50 dark:border-zinc-800/50 shadow-sm'
+            ? 'bg-white/90 dark:bg-zinc-900/90 backdrop-blur-lg border-zinc-200/80 dark:border-zinc-800/80 shadow-md shadow-zinc-200/10 dark:shadow-none'
+            : 'bg-white/70 dark:bg-zinc-900/40 backdrop-blur-md border-zinc-200/40 dark:border-zinc-800/50 shadow-sm shadow-zinc-100/5 dark:shadow-none'
         }`}
       >
         {/* Brand / Logo */}

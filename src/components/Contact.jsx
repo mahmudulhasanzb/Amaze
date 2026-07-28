@@ -90,7 +90,7 @@ const Contact = () => {
                   whileInView={{ opacity: 1, x: 0 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.4, delay: i * 0.1 }}
-                  className="flex gap-4 p-5 rounded-2xl bg-white/40 dark:bg-zinc-900/35 border border-white/20 dark:border-zinc-800/40 shadow-sm hover:shadow-md hover:bg-white/60 dark:hover:bg-zinc-900/60 transition-all duration-300"
+                  className="flex gap-4 p-5 rounded-2xl bg-white/85 dark:bg-zinc-900/45 border border-zinc-200/60 dark:border-zinc-800/40 shadow-sm hover:shadow-md hover:bg-white/95 dark:hover:bg-zinc-900/60 transition-all duration-300"
                 >
                   <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-blue-50 dark:bg-zinc-800/80 border border-blue-100/50 dark:border-zinc-700/50">
                     <Icon className="h-5 w-5 text-blue-600 dark:text-blue-400" />
@@ -125,7 +125,7 @@ const Contact = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
-              className="relative p-6 md:p-8 rounded-3xl bg-white/40 dark:bg-zinc-900/35 backdrop-blur-2xl border border-white/30 dark:border-zinc-800/40 shadow-xl"
+              className="relative p-6 md:p-8 rounded-3xl bg-white/85 dark:bg-zinc-900/45 backdrop-blur-2xl border border-zinc-200/60 dark:border-zinc-800/40 shadow-xl shadow-zinc-200/20 dark:shadow-none"
             >
               <AnimatePresence mode="wait">
                 {!isSubmitted ? (
@@ -149,7 +149,7 @@ const Contact = () => {
                           value={formData.name}
                           onChange={handleChange}
                           placeholder="John Doe"
-                          className="w-full h-11 px-4 rounded-xl border border-zinc-200 dark:border-zinc-800 bg-white/50 dark:bg-zinc-950/50 text-sm text-zinc-900 dark:text-white placeholder-zinc-400 focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 transition-all"
+                          className="w-full h-11 px-4 rounded-xl border border-zinc-200/80 dark:border-zinc-800/80 bg-white dark:bg-zinc-950/60 text-sm text-zinc-900 dark:text-white placeholder-zinc-400 focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 transition-all shadow-sm"
                         />
                       </div>
 
@@ -165,7 +165,7 @@ const Contact = () => {
                           value={formData.email}
                           onChange={handleChange}
                           placeholder="john@example.com"
-                          className="w-full h-11 px-4 rounded-xl border border-zinc-200 dark:border-zinc-800 bg-white/50 dark:bg-zinc-950/50 text-sm text-zinc-900 dark:text-white placeholder-zinc-400 focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 transition-all"
+                          className="w-full h-11 px-4 rounded-xl border border-zinc-200/80 dark:border-zinc-800/80 bg-white dark:bg-zinc-950/60 text-sm text-zinc-900 dark:text-white placeholder-zinc-400 focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 transition-all shadow-sm"
                         />
                       </div>
                     </div>
@@ -182,7 +182,7 @@ const Contact = () => {
                         value={formData.subject}
                         onChange={handleChange}
                         placeholder="Inquiry about Property Management"
-                        className="w-full h-11 px-4 rounded-xl border border-zinc-200 dark:border-zinc-800 bg-white/50 dark:bg-zinc-950/50 text-sm text-zinc-900 dark:text-white placeholder-zinc-400 focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 transition-all"
+                        className="w-full h-11 px-4 rounded-xl border border-zinc-200/80 dark:border-zinc-800/80 bg-white dark:bg-zinc-950/60 text-sm text-zinc-900 dark:text-white placeholder-zinc-400 focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 transition-all shadow-sm"
                       />
                     </div>
 
@@ -198,7 +198,7 @@ const Contact = () => {
                         value={formData.message}
                         onChange={handleChange}
                         placeholder="Please write your inquiry here..."
-                        className="w-full p-4 rounded-xl border border-zinc-200 dark:border-zinc-800 bg-white/50 dark:bg-zinc-950/50 text-sm text-zinc-900 dark:text-white placeholder-zinc-400 focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 transition-all resize-none"
+                        className="w-full p-4 rounded-xl border border-zinc-200/80 dark:border-zinc-800/80 bg-white dark:bg-zinc-950/60 text-sm text-zinc-900 dark:text-white placeholder-zinc-400 focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 transition-all resize-none shadow-sm"
                       />
                     </div>
 

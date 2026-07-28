@@ -91,7 +91,7 @@ const WhyChoseUs = () => {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 0.4, delay: index * 0.05 }}
-      className="group flex gap-4 p-4 rounded-2xl bg-white/40 dark:bg-zinc-900/35 hover:bg-white/80 dark:hover:bg-zinc-900/60 border border-white/20 dark:border-zinc-800/40 shadow-sm hover:shadow-md transition-all duration-300"
+      className="group flex gap-4 p-4 rounded-2xl bg-white/85 dark:bg-zinc-900/45 hover:bg-white/95 dark:hover:bg-zinc-900/65 border border-zinc-200/60 dark:border-zinc-800/40 shadow-sm hover:shadow-md hover:border-zinc-300/60 dark:hover:border-zinc-700/60 transition-all duration-300"
     >
       <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-blue-50 dark:bg-zinc-800/80 border border-blue-100/50 dark:border-zinc-700/50 group-hover:scale-105 transition-transform duration-200">
         <Icon className="h-5 w-5 text-blue-600 dark:text-blue-400" />
@@ -100,7 +100,7 @@ const WhyChoseUs = () => {
         <h3 className="text-sm font-bold text-zinc-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
           {title}
         </h3>
-        <p className="text-xs md:text-sm text-zinc-550 dark:text-zinc-350 leading-relaxed font-normal">
+        <p className="text-xs md:text-sm text-zinc-600 dark:text-zinc-400 leading-relaxed font-normal">
           {description}
         </p>
       </div>
@@ -136,7 +136,7 @@ const WhyChoseUs = () => {
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
-              className="relative w-full max-w-sm rounded-3xl p-4 bg-white/20 dark:bg-zinc-800/10 border border-white/40 dark:border-zinc-700/20 backdrop-blur-md shadow-2xl flex items-center justify-center overflow-hidden group"
+              className="relative w-full max-w-sm rounded-3xl p-4 bg-white/85 dark:bg-zinc-900/45 border border-zinc-200/60 dark:border-zinc-800/40 backdrop-blur-md shadow-xl shadow-zinc-200/30 dark:shadow-none flex items-center justify-center overflow-hidden group"
             >
               <div className="absolute inset-0 bg-gradient-to-br from-blue-500/10 to-indigo-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
               <img

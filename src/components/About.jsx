@@ -24,7 +24,7 @@ const About = () => {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 0.6 }}
-        className="relative max-w-6xl mx-auto rounded-3xl bg-white/40 dark:bg-zinc-900/35 backdrop-blur-2xl border border-white/30 dark:border-zinc-800/40 p-6 md:p-10 shadow-2xl shadow-zinc-200/20 dark:shadow-none"
+        className="relative max-w-6xl mx-auto rounded-3xl bg-white/85 dark:bg-zinc-900/45 backdrop-blur-2xl border border-zinc-200/60 dark:border-zinc-800/40 p-6 md:p-10 shadow-xl shadow-zinc-200/40 dark:shadow-none"
       >
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
           {/* Left Content Column */}
