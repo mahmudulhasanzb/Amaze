@@ -5,8 +5,10 @@ import Link from 'next/link';
 import { Menu, X, Sparkles, ChevronRight } from 'lucide-react';
 import Image from 'next/image';
 import { ThemeSwitcher } from '../theme-switcher';
+import { usePathname } from 'next/navigation';
 
 const Navbar = () => {
+  const pathName = usePathname()
   const [scrolled, setScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
@@ -66,7 +68,11 @@ const Navbar = () => {
             <Link
               key={item.name}
               href={item.href}
-              className="px-3.5 py-2 text-sm font-medium text-zinc-650 dark:text-zinc-300 hover:text-blue-600 dark:hover:text-blue-450 rounded-xl hover:bg-zinc-500/5 dark:hover:bg-zinc-800/50 transition-all duration-200"
+              className={`px-3.5 py-2 text-sm font-medium rounded-xl transition-all duration-200 ${
+                pathName === item.href
+                  ? 'bg-blue-50/60 text-blue-600 dark:bg-zinc-800/80 dark:text-blue-400'
+                  : 'text-zinc-600 dark:text-zinc-300 hover:text-zinc-900 dark:hover:text-white hover:bg-zinc-100/50 dark:hover:bg-zinc-800/40'
+              }`}
             >
               {item.name}
             </Link>
@@ -75,7 +81,7 @@ const Navbar = () => {
 
         {/* Theme Switcher and Contact Button */}
         <div className="hidden lg:flex items-center gap-4">
-          <ThemeSwitcher/>
+          <ThemeSwitcher />
           <Link
             href="#contact"
             className="inline-flex h-10 items-center justify-center px-5 py-2 rounded-xl bg-zinc-950 dark:bg-white text-white dark:text-zinc-950 hover:bg-zinc-800 dark:hover:bg-zinc-100 text-sm font-semibold shadow-sm hover:shadow transition-all duration-200"
@@ -108,7 +114,11 @@ const Navbar = () => {
                 key={item.name}
                 href={item.href}
                 onClick={() => setMobileMenuOpen(false)}
-                className="flex items-center justify-between px-4 py-3 text-sm font-medium text-zinc-700 dark:text-zinc-300 hover:text-blue-600 dark:hover:text-blue-400 rounded-xl hover:bg-zinc-50 dark:hover:bg-zinc-800/50 transition-colors"
+                className={`flex items-center justify-between px-4 py-3 text-sm font-medium rounded-xl transition-all duration-200 ${
+                  pathName === item.href
+                    ? 'bg-blue-50/60 text-blue-600 dark:bg-zinc-800/80 dark:text-blue-400'
+                    : 'text-zinc-600 dark:text-zinc-300 hover:text-zinc-900 dark:hover:text-white hover:bg-zinc-100/50 dark:hover:bg-zinc-800/40'
+                }`}
               >
                 <span>{item.name}</span>
                 <ChevronRight className="h-4 w-4 opacity-50" />
