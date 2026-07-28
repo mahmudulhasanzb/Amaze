@@ -4,6 +4,7 @@ import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { Menu, X, Sparkles, ChevronRight } from 'lucide-react';
 import Image from 'next/image';
+import { ThemeSwitcher } from '../theme-switcher';
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -49,8 +50,9 @@ const Navbar = () => {
         <Link href="/" className="flex items-center gap-2 group">
           <div className="flex h-10 w-10 items-center justify-center rounded-xl  text-white shadow-md shadow-blue-500/20 group-hover:scale-105 transition-transform duration-200">
             <img
-              src="https://i.ibb.co.com/C35WN3Q9/logo.png" alt='logo'
-              className='w-5 h-5'
+              src="https://i.ibb.co.com/C35WN3Q9/logo.png"
+              alt="logo"
+              className="w-5 h-5"
             />
           </div>
           <span className="text-xl font-bold tracking-tight bg-gradient-to-r from-zinc-950 via-zinc-800 to-zinc-950 dark:from-white dark:via-zinc-200 dark:to-white bg-clip-text text-transparent">
@@ -71,8 +73,9 @@ const Navbar = () => {
           ))}
         </div>
 
-        {/* CTA Button / Contact Us */}
-        <div className="hidden lg:block">
+        {/* Theme Switcher and Contact Button */}
+        <div className="hidden lg:flex items-center gap-4">
+          <ThemeSwitcher/>
           <Link
             href="#contact"
             className="inline-flex h-10 items-center justify-center px-5 py-2 rounded-xl bg-zinc-950 dark:bg-white text-white dark:text-zinc-950 hover:bg-zinc-800 dark:hover:bg-zinc-100 text-sm font-semibold shadow-sm hover:shadow transition-all duration-200"
@@ -83,12 +86,7 @@ const Navbar = () => {
 
         {/* Mobile menu button */}
         <div className="flex lg:hidden items-center gap-2">
-          <Link
-            href="#contact"
-            className="inline-flex h-9 items-center justify-center px-4 rounded-lg bg-zinc-950 dark:bg-white text-white dark:text-zinc-950 text-xs font-semibold"
-          >
-            Contact
-          </Link>
+          <ThemeSwitcher />
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             className="flex h-9 w-9 items-center justify-center rounded-lg border border-zinc-200 dark:border-zinc-800 text-zinc-700 dark:text-zinc-300 hover:bg-zinc-50 dark:hover:bg-zinc-800 transition-colors"
