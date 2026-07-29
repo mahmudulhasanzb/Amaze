@@ -159,7 +159,13 @@ export default function AboutPage() {
 
           <div className="flex flex-col gap-12">
             {/* Card 1: Our Mission */}
-            <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-center bg-white dark:bg-zinc-900/50 p-6 md:p-8 rounded-3xl border border-slate-100 dark:border-zinc-800/60 shadow-sm">
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+              className="grid grid-cols-1 md:grid-cols-12 gap-8 items-center bg-white dark:bg-zinc-900/50 p-6 md:p-8 rounded-3xl border border-slate-100 dark:border-zinc-800/60 shadow-sm"
+            >
               <div className="md:col-span-8 flex flex-col gap-3">
                 <div className="flex items-center gap-2">
                   <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-blue-50 dark:bg-zinc-800 text-blue-700 dark:text-blue-400">
@@ -169,7 +175,7 @@ export default function AboutPage() {
                     Our Mission
                   </h3>
                 </div>
-                <p className="text-sm md:text-base text-slate-600 dark:text-zinc-350 leading-relaxed text-justify">
+                <p className="text-sm md:text-base text-slate-650 dark:text-zinc-350 leading-relaxed text-justify">
                   Our Mission is to be a leading provider of comprehensive
                   property management solutions in the PAN INDIA. We are
                   committed to delivering exceptional services that exceed our
@@ -183,10 +189,16 @@ export default function AboutPage() {
                   <Target className="h-10 w-10 text-blue-700 dark:text-blue-450 stroke-[1.5]" />
                 </div>
               </div>
-            </div>
+            </motion.div>
 
             {/* Card 2: Our Vision (Alternated visual) */}
-            <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-center bg-white dark:bg-zinc-900/50 p-6 md:p-8 rounded-3xl border border-slate-100 dark:border-zinc-800/60 shadow-sm">
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+              className="grid grid-cols-1 md:grid-cols-12 gap-8 items-center bg-white dark:bg-zinc-900/50 p-6 md:p-8 rounded-3xl border border-slate-100 dark:border-zinc-800/60 shadow-sm"
+            >
               <div className="md:col-span-4 flex justify-center order-last md:order-first">
                 <div className="relative flex items-center justify-center h-28 w-28 rounded-full bg-teal-50/60 dark:bg-zinc-800/30 border border-teal-100/50 dark:border-zinc-800">
                   <div className="absolute inset-2 rounded-full border border-dashed border-teal-400/50 animate-[spin_25s_linear_infinite]" />
@@ -195,14 +207,14 @@ export default function AboutPage() {
               </div>
               <div className="md:col-span-8 flex flex-col gap-3">
                 <div className="flex items-center gap-2">
-                  <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-teal-50 dark:bg-zinc-800 text-teal-700 dark:text-teal-450">
+                  <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-teal-50 dark:bg-zinc-800 text-teal-700 dark:text-teal-455">
                     <Eye className="h-5 w-5" />
                   </div>
                   <h3 className="text-lg font-bold text-slate-900 dark:text-white">
                     Our Vision
                   </h3>
                 </div>
-                <p className="text-sm md:text-base text-slate-600 dark:text-zinc-350 leading-relaxed text-justify">
+                <p className="text-sm md:text-base text-slate-655 dark:text-zinc-350 leading-relaxed text-justify">
                   Our Vision is to transform the property management industry by
                   setting new standards of excellence and innovation. We strive
                   to be recognized for reliable, cost-effective, and sustainable
@@ -215,10 +227,16 @@ export default function AboutPage() {
                   .
                 </p>
               </div>
-            </div>
+            </motion.div>
 
             {/* Card 3: Our Values */}
-            <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-center bg-white dark:bg-zinc-900/50 p-6 md:p-8 rounded-3xl border border-slate-100 dark:border-zinc-800/60 shadow-sm">
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+              className="grid grid-cols-1 md:grid-cols-12 gap-8 items-center bg-white dark:bg-zinc-900/50 p-6 md:p-8 rounded-3xl border border-slate-100 dark:border-zinc-800/60 shadow-sm"
+            >
               <div className="md:col-span-8 flex flex-col gap-3">
                 <div className="flex items-center gap-2">
                   <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-indigo-50 dark:bg-zinc-800 text-indigo-700 dark:text-indigo-400">
@@ -228,7 +246,7 @@ export default function AboutPage() {
                     Our Core Values
                   </h3>
                 </div>
-                <p className="text-sm md:text-base text-slate-600 dark:text-zinc-350 leading-relaxed text-justify">
+                <p className="text-sm md:text-base text-slate-655 dark:text-zinc-350 leading-relaxed text-justify">
                   Our Core Values include respect, integrity, excellence,
                   sustainability, and customer focus. We are committed to
                   conducting business with the highest ethical standards,
@@ -240,10 +258,10 @@ export default function AboutPage() {
               <div className="md:col-span-4 flex justify-center">
                 <div className="relative flex items-center justify-center h-28 w-28 rounded-full bg-indigo-50/60 dark:bg-zinc-800/30 border border-indigo-100/50 dark:border-zinc-800">
                   <div className="absolute inset-2 rounded-full border border-dashed border-indigo-400/50 animate-[spin_15s_linear_infinite]" />
-                  <Shield className="h-10 w-10 text-indigo-700 dark:text-indigo-450 stroke-[1.5]" />
+                  <Shield className="h-10 w-10 text-indigo-700 dark:text-indigo-455 stroke-[1.5]" />
                 </div>
               </div>
-            </div>
+            </motion.div>
           </div>
         </div>
       </section>
