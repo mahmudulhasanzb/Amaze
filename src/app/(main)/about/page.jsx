@@ -271,7 +271,13 @@ export default function AboutPage() {
         <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
             {/* Left Content Area: Title & Grid list */}
-            <div className="lg:col-span-8 space-y-8">
+            <motion.div
+              initial={{ opacity: 0, x: -30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+              className="lg:col-span-8 space-y-8"
+            >
               <div className="space-y-2">
                 <span className="text-xs font-bold tracking-wider text-blue-700 dark:text-blue-400 uppercase">
                   Our Operations Range
@@ -300,10 +306,16 @@ export default function AboutPage() {
                   );
                 })}
               </div>
-            </div>
+            </motion.div>
 
             {/* Right Graphics Area */}
-            <div className="lg:col-span-4 flex justify-center">
+            <motion.div
+              initial={{ opacity: 0, x: 30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+              className="lg:col-span-4 flex justify-center"
+            >
               <div className="relative w-full max-w-xs p-6 rounded-3xl bg-slate-50 dark:bg-zinc-900 border border-slate-100 dark:border-zinc-800/80 shadow-md shadow-slate-100/50 dark:shadow-none flex flex-col gap-4 text-center">
                 <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-2xl bg-blue-50 dark:bg-zinc-800 border border-blue-100/60 dark:border-zinc-700/50">
                   <Landmark className="h-7 w-7 text-blue-700 dark:text-blue-400" />
