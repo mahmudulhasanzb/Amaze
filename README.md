@@ -1,102 +1,114 @@
-# Amaze Property Management Solutions — Web Redesign
+# Amaze - Property Management Solutions
 
-A premium, high-fidelity redesign and development of [Amaze PMS](https://www.amazepms.com) built with **Next.js**, **React**, and **Tailwind CSS**. 
-
-This project transforms the original site into a modern, engaging B2B portal matching the aesthetics of premium digital brands (such as Stripe, Apple, and Vercel) while fully preserving the business objectives and layout intent.
-
----
-
-## 🌟 Key Features
-
-### 1. Premium & Engaging UI Design
-* **Pure White & Slate Aesthetics**: Swapped generic gray backgrounds with clean, high-contrast pure white layouts. Implemented fine borders (`border-slate-100` / `border-slate-200`) and soft, deep shadows for a crisp visual hierarchy.
-* **Cohesive Corporate Palette**: Accents styled in deep blue (`#1d4ed8` / `#1e3a8a`) and teal (`#0f766e` / `#14b8a6`) colors that convey corporate trust, institutional capability, and operational scale.
-* **Dual-Theme Support**: Flawless support for both Light Mode and Dark Mode, integrated with system preference detection and manual override theme-toggles.
-
-### 2. High-Fidelity & Interactive Components
-* **Hero Carousel Slider (`Banner.jsx`)**: A full-bleed slideshow featuring responsive images, floating typography layout, manual next/prev controls, index indicators, and Framer Motion transitions.
-* **Overlapping Card Infographics (`About.jsx` & `/about`):** Creative layout layers depicting Action Group's Navy background shield and the team photo.
-* **Infinite Partners Marquee (`Marque.jsx`)**: An infinite horizontal logo loop featuring hover-to-pause logic, showcasing valued partners and institutional clients.
-* **Contact & Form Validation (`Contact.jsx`)**: Includes custom status responses, input validation, and interactive focus states.
-
-### 3. Subpages, Navigation, & Route Handlers
-* **Navbar Underline Micro-Interactions**: Hovering menu links triggers an expanding horizontal slide indicator from left-to-right using custom CSS transitions.
-* **Special Route Layouts**:
-  * **Loading Component (`loading.jsx`)**: A custom Next.js fallback boundary featuring a centerpiece blue dot wrapped inside a rotating spinner track.
-  * **Custom 404 Page (`not-found.jsx`)**: A brand-aligned static error screen guiding lost users back to the homepage lobby or allowing them to file a support ticket.
-  * **Coming Soon Placeholder (`CommingSoon.jsx`)**: A reusable card layout rendered across routes currently undergoing design expansion (Services, Careers, Testimonials, Strength, etc.).
+A modern, high-performance corporate website built with **Next.js 16 (App
+Router)**, **Tailwind CSS v4**, and **HeroUI** for **Amaze PMS Pvt Ltd**, a
+premier Property Management division of the Action Group of Companies.
 
 ---
 
-## 🛠️ Technology Stack
+## 🚀 Tech Stack
 
-* **Framework**: [Next.js 15 (App Router)](https://nextjs.org/)
-* **Library**: [React 19](https://react.dev/)
-* **Styling**: [Tailwind CSS v4](https://tailwindcss.com/)
-* **Animations**: [Framer Motion](https://www.framer.com/motion/)
-* **Icons**: [Lucide React](https://lucide.dev/)
-
----
-
-## 🚀 Getting Started & Local Setup
-
-To run this project on your local machine, follow these simple steps:
-
-### Prerequisites
-* Ensure you have [Node.js](https://nodejs.org/) installed (v18.x or higher recommended).
-* A package manager like `npm` (packaged with Node) or `yarn` / `pnpm`.
-
-### Installation
-1. **Clone the repository**:
-   ```bash
-   git clone https://github.com/mahmudulhasanzb/Amaze.git
-   cd Amaze
-   ```
-
-2. **Install dependencies**:
-   ```bash
-   npm install
-   ```
-
-3. **Run the development server**:
-   ```bash
-   npm run dev
-   ```
-
-4. **View in browser**:
-   Open [http://localhost:3000](http://localhost:3000) inside your web browser.
+- **Framework:** [Next.js 16](https://nextjs.org/) (App Router, React 19)
+- **Styling:** [Tailwind CSS v4](https://tailwindcss.com/) with PostCSS
+  configuration
+- **UI Components:** [HeroUI (v3)](https://heroui.com/)
+- **Animations:** [Framer Motion / Motion](https://motion.dev/)
+- **Icons:** [Lucide React](https://lucide.dev/)
+- **Theme Support:** [Next-Themes](https://github.com/pacocoursey/next-themes)
+  for seamless light/dark mode switching
 
 ---
 
-## 📂 Project Directory Structure
+## ✨ Features
+
+- **Responsive Modern Design:** Beautiful layouts optimized for mobile, tablet,
+  and desktop viewports.
+- **Dynamic Theme Switcher:** Fully integrated light and dark modes with color
+  system calibration.
+- **Micro-Animations:** Fluid slide transitions, hover states, and scroll
+  animations powered by Framer Motion.
+- **Integrated Sections & Pages:**
+  - **Home Page:** Hero banner, client marquee, about summary, key
+    differentiators, and interactive contact form.
+  - **About Us (`/about`):** Detailed corporate history, Mr. Subhani Abdul
+    (Founder) bio, mission statement.
+  - **Services (`/services`):** Offerings overview (Housekeeping, MEP, Security,
+    Pest Control, Gardening, STP/WTP).
+  - **Recruitments (`/recruitments`):** Job openings and workforce placement
+    solutions.
+  - **Our Strength (`/strength`):** Analytical view of the workforce, emergency
+    readiness, and standard operating procedures (SOPs).
+  - **Our Clients (`/testimonials`):** Showcasing client success stories and
+    corporate testimonials.
+  - **Gallery (`/gallery`):** Project portfolios and service visual showcases.
+  - **Careers (`/careers`):** Career options and training opportunities.
+
+---
+
+## 📁 Directory Structure
 
 ```text
-├── public/                 # Static assets (images, logos, vector icons)
+amaze/
+├── public/               # Static assets (images, logos)
 ├── src/
-│   ├── app/                # Next.js App Router root layout & routes
-│   │   ├── (main)/         # Main layout group
-│   │   │   ├── about/      # Detailed About Page route
-│   │   │   ├── services/   # Services placeholder route
-│   │   │   ├── strength/   # Our Strength placeholder route
-│   │   │   └── ...         # Gallery, Testimonials, Careers page routes
-│   │   ├── globals.css     # Global styles & tailwind configurations
-│   │   ├── loading.jsx     # Global Next.js route transition screen
-│   │   └── not-found.jsx   # Custom 404 Page
-│   ├── components/         # Reusable presentation components
-│   │   ├── layout/         # Shared layouts (Navbar.jsx, Footer.jsx)
-│   │   ├── About.jsx       # About us excerpt (Home page)
-│   │   ├── Banner.jsx      # Premium Hero slider
-│   │   ├── Contact.jsx     # Interactive contact form
-│   │   ├── Marque.jsx      # Infinite loop marquee
-│   │   ├── WhyChoseUs.jsx  # Feature grids
-│   │   └── CommingSoon.jsx # Reusable Coming Soon placeholder card
-└── package.json            # Project configurations and npm scripts
+│   ├── app/              # Next.js App Router (Layouts and Pages)
+│   │   ├── (main)/       # Main website pages group
+│   │   │   ├── about/    # About page
+│   │   │   ├── careers/  # Careers page
+│   │   │   ├── gallery/  # Gallery page
+│   │   │   ├── layout.js # Subpage wrapper layout
+│   │   │   ├── page.js   # Landing / Home page
+│   │   │   └── ...       # Other routes (services, strength, testimonials)
+│   │   ├── globals.css   # Main CSS entry (Tailwind imports & variables)
+│   │   ├── layout.js     # Root layout (Metadata, Providers)
+│   │   └── providers.jsx # HeroUI & Theme provider wrappers
+│   └── components/       # Reusable React components
+│       ├── layout/       # Layout structural elements (Navbar, Footer)
+│       ├── About.jsx     # Landing page About section
+│       ├── Banner.jsx    # Hero Slider Carousel
+│       └── ...           # Contact, Marque, WhyChoseUs, etc.
+├── next.config.mjs       # Next.js config
+├── package.json          # Dependency manifest
+└── tailwind.config       # Tailwind CSS configurations
 ```
 
 ---
 
-## 🎨 Best Practices & Standards Applied
+## 🛠️ Getting Started
 
-* **SEO and Semantics**: Pages use semantic HTML5 elements (`<header>`, `<section>`, `<article>`, `<main>`, `<footer>`) with structured heading hierarchies (`h1` -> `h2` -> `h3`).
-* **Design Standards**: Complies with standard accessibility colors and contrast ratios. Touch targets and hover states feature cursor-pointers and transition timings.
-* **Component Modularity**: Business logic, presentation elements, and assets are separated into decoupled components to maximize ease of maintenance.
+### Prerequisites
+
+Ensure you have [Node.js](https://nodejs.org/) installed (v18+ recommended).
+
+### Installation
+
+Clone the repository and install dependencies:
+
+```bash
+npm install
+```
+
+### Run Local Development Server
+
+Run the server locally to preview development changes:
+
+```bash
+npm run dev
+```
+
+Open [http://localhost:3000](http://localhost:3000) in your browser to view the
+application.
+
+### Build and Deployment
+
+Generate an optimized production build:
+
+```bash
+npm run build
+```
+
+Start the built production server:
+
+```bash
+npm run start
+```
