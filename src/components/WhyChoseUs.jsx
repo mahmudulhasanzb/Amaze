@@ -91,16 +91,16 @@ const WhyChoseUs = () => {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 0.4, delay: index * 0.05 }}
-      className="group flex gap-4 p-4 rounded-2xl bg-white/85 dark:bg-zinc-900/45 hover:bg-white/95 dark:hover:bg-zinc-900/65 border border-zinc-200/60 dark:border-zinc-800/40 shadow-sm hover:shadow-md hover:border-zinc-300/60 dark:hover:border-zinc-700/60 transition-all duration-300"
+      className="group flex gap-4 p-4 rounded-2xl bg-white dark:bg-zinc-900/45 hover:bg-white dark:hover:bg-zinc-900/65 border border-slate-100 dark:border-zinc-800/40 shadow-sm hover:shadow-md hover:border-slate-200 dark:hover:border-zinc-700/60 transition-all duration-300"
     >
-      <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-blue-50 dark:bg-zinc-800/80 border border-blue-100/50 dark:border-zinc-700/50 group-hover:scale-105 transition-transform duration-200">
-        <Icon className="h-5 w-5 text-blue-600 dark:text-blue-400" />
+      <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-blue-50 dark:bg-zinc-800/80 border border-blue-100/80 dark:border-zinc-700/50 group-hover:scale-105 transition-transform duration-200">
+        <Icon className="h-5 w-5 text-blue-700 dark:text-blue-400" />
       </div>
       <div className="space-y-1">
-        <h3 className="text-sm font-bold text-zinc-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
+        <h3 className="text-sm font-bold text-slate-900 dark:text-white group-hover:text-blue-700 dark:group-hover:text-blue-400 transition-colors">
           {title}
         </h3>
-        <p className="text-xs md:text-sm text-zinc-600 dark:text-zinc-400 leading-relaxed font-normal">
+        <p className="text-xs md:text-sm text-slate-600 dark:text-zinc-400 leading-relaxed font-normal">
           {description}
         </p>
       </div>
@@ -108,21 +108,21 @@ const WhyChoseUs = () => {
   );
 
   return (
-    <section className="relative w-full py-20 px-4 md:px-8 overflow-hidden bg-zinc-50/50 dark:bg-black/30">
+    <section className="relative w-full py-20 px-4 md:px-8 overflow-hidden bg-white dark:bg-black/30">
       {/* Background Ambient Glow Blobs */}
-      <div className="absolute -top-40 -right-40 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl pointer-events-none" />
-      <div className="absolute -bottom-40 -left-40 w-96 h-96 bg-indigo-500/10 rounded-full blur-3xl pointer-events-none" />
+      <div className="absolute -top-40 -right-40 w-96 h-96 bg-blue-400/5 dark:bg-blue-500/10 rounded-full blur-3xl pointer-events-none" />
+      <div className="absolute -bottom-40 -left-40 w-96 h-96 bg-teal-400/5 dark:bg-indigo-500/10 rounded-full blur-3xl pointer-events-none" />
 
       <div className="max-w-7xl mx-auto">
         {/* Section Heading */}
         <div className="text-center max-w-3xl mx-auto mb-16 space-y-3">
-          <span className="text-xs font-bold tracking-wider text-blue-600 dark:text-blue-450 uppercase">
+          <span className="section-rule text-xs font-bold tracking-wider text-blue-700 dark:text-blue-400 uppercase">
             Our Advantage
           </span>
           <h2 className="text-3xl md:text-4xl font-extrabold tracking-tight bg-gradient-to-r from-zinc-950 via-zinc-800 to-zinc-950 dark:from-white dark:via-zinc-200 dark:to-white bg-clip-text text-transparent">
             Why Choose Us
           </h2>
-          <p className="text-sm md:text-base text-zinc-500 dark:text-zinc-400 font-normal">
+          <p className="text-sm md:text-base text-slate-500 dark:text-zinc-400 font-normal">
             Industry-leading property management solutions driven by experience, technology, and dedication.
           </p>
         </div>
@@ -136,7 +136,7 @@ const WhyChoseUs = () => {
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
-              className="relative w-full max-w-sm rounded-3xl p-4 bg-white/85 dark:bg-zinc-900/45 border border-zinc-200/60 dark:border-zinc-800/40 backdrop-blur-md shadow-xl shadow-zinc-200/30 dark:shadow-none flex items-center justify-center overflow-hidden group"
+              className="relative w-full max-w-sm rounded-3xl p-4 bg-white dark:bg-zinc-900/45 border border-slate-100 dark:border-zinc-800/40 shadow-xl shadow-slate-200/80 dark:shadow-none flex items-center justify-center overflow-hidden group"
             >
               <div className="absolute inset-0 bg-gradient-to-br from-blue-500/10 to-indigo-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
               <img

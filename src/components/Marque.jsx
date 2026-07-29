@@ -75,7 +75,7 @@ const brands = [
 
 const Marque = () => {
   return (
-    <section className="relative w-full py-10 bg-zinc-50/50 dark:bg-black/20 border-y border-zinc-200/50 dark:border-zinc-800/30 overflow-hidden">
+    <section className="relative w-full py-10 bg-white dark:bg-black/20 border-y border-slate-100 dark:border-zinc-800/30 overflow-hidden">
       
       {/* Inline styles for keyframes to keep it self-contained */}
       <style>{`
@@ -89,15 +89,15 @@ const Marque = () => {
       `}</style>
 
       <div className="max-w-7xl mx-auto px-6 md:px-8 mb-6 text-center">
-        <span className="text-xs font-bold tracking-widest text-zinc-400 dark:text-zinc-500 uppercase">
+        <span className="text-xs font-bold tracking-widest text-slate-400 dark:text-zinc-500 uppercase">
           Trusted by Industry Leaders & Innovators
         </span>
       </div>
 
       {/* Fade Gradients left and right */}
       <div className="relative w-full flex items-center overflow-hidden py-4
-        before:absolute before:left-0 before:top-0 before:z-20 before:h-full before:w-24 before:bg-gradient-to-r before:from-zinc-50 dark:before:from-zinc-950/20 before:to-transparent before:pointer-events-none
-        after:absolute after:right-0 after:top-0 after:z-20 after:h-full after:w-24 after:bg-gradient-to-l after:from-zinc-50 dark:after:from-zinc-950/20 after:to-transparent after:pointer-events-none"
+        before:absolute before:left-0 before:top-0 before:z-20 before:h-full before:w-24 before:bg-gradient-to-r before:from-white dark:before:from-zinc-950/20 before:to-transparent before:pointer-events-none
+        after:absolute after:right-0 after:top-0 after:z-20 after:h-full after:w-24 after:bg-gradient-to-l after:from-white dark:after:from-zinc-950/20 after:to-transparent after:pointer-events-none"
       >
         <div className="flex w-[200%] gap-12 items-center animate-marquee-slow hover:[animation-play-state:paused]">
           
@@ -106,7 +106,7 @@ const Marque = () => {
             {brands.map((brand, i) => (
               <div
                 key={`${brand.name}-1`}
-                className="flex items-center text-zinc-450 dark:text-zinc-450 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-300 select-none cursor-pointer"
+                className="flex items-center text-slate-400 dark:text-zinc-450 hover:text-blue-700 dark:hover:text-blue-400 transition-colors duration-300 select-none cursor-pointer"
               >
                 {brand.logo}
                 <span className="text-sm font-bold tracking-tight">{brand.name}</span>
@@ -119,7 +119,7 @@ const Marque = () => {
             {brands.map((brand, i) => (
               <div
                 key={`${brand.name}-2`}
-                className="flex items-center text-zinc-450 dark:text-zinc-450 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-300 select-none cursor-pointer"
+                className="flex items-center text-slate-400 dark:text-zinc-450 hover:text-blue-700 dark:hover:text-blue-400 transition-colors duration-300 select-none cursor-pointer"
               >
                 {brand.logo}
                 <span className="text-sm font-bold tracking-tight">{brand.name}</span>

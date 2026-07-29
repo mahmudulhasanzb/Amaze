@@ -67,7 +67,7 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="relative w-full bg-zinc-50 dark:bg-zinc-950 border-t border-zinc-200/60 dark:border-zinc-800/80 pt-16 pb-8 overflow-hidden mt-auto">
+    <footer className="relative w-full bg-white dark:bg-zinc-950 border-t border-slate-100 dark:border-zinc-800/80 pt-16 pb-8 overflow-hidden mt-auto">
       {/* Background ambient glow */}
       <div className="absolute top-0 right-1/4 w-96 h-96 bg-blue-500/5 dark:bg-blue-500/3 rounded-full blur-3xl pointer-events-none" />
 
@@ -77,7 +77,7 @@ const Footer = () => {
           {/* Column 1: Company Profile */}
           <div className="lg:col-span-4 space-y-4">
             <div className="flex items-center gap-2.5">
-              <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-white dark:bg-zinc-900 border border-zinc-200/50 dark:border-zinc-800/50 shadow-sm">
+              <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-white dark:bg-zinc-900 border border-slate-100 dark:border-zinc-800/50 shadow-sm">
                 <img
                   src="https://i.ibb.co.com/C35WN3Q9/logo.png"
                   alt="logo"
@@ -102,7 +102,7 @@ const Footer = () => {
                 <a
                   key={label}
                   href={href}
-                  className="flex h-8 w-8 items-center justify-center rounded-lg bg-white dark:bg-zinc-900 border border-zinc-200/50 dark:border-zinc-800 text-zinc-500 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-white dark:hover:bg-zinc-800 transition-all duration-200 shadow-sm cursor-pointer"
+                  className="flex h-8 w-8 items-center justify-center rounded-lg bg-white dark:bg-zinc-900 border border-slate-100 dark:border-zinc-800 text-slate-500 hover:text-blue-700 dark:hover:text-blue-400 hover:bg-slate-50 dark:hover:bg-zinc-800 transition-all duration-200 shadow-sm cursor-pointer"
                   aria-label={label}
                 >
                   <Icon className="h-4 w-4" />

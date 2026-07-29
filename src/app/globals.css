@@ -4,20 +4,38 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 :root {
-  --background: #f8fafc;
+  --background: #ffffff;
   --foreground: #0f172a;
+  --surface: #ffffff;
+  --surface-2: #f8fafc;
+  --border: #e2e8f0;
+  --muted: #64748b;
+  --accent: #0369a1;
+  --accent-teal: #0f766e;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #09090b;
     --foreground: #f4f4f5;
+    --surface: #18181b;
+    --surface-2: #09090b;
+    --border: #27272a;
+    --muted: #71717a;
+    --accent: #3b82f6;
+    --accent-teal: #14b8a6;
   }
 }
 
 .dark {
   --background: #09090b;
   --foreground: #f4f4f5;
+  --surface: #18181b;
+  --surface-2: #09090b;
+  --border: #27272a;
+  --muted: #71717a;
+  --accent: #3b82f6;
+  --accent-teal: #14b8a6;
 }
 
 @theme inline {
@@ -32,3 +50,15 @@ body {
   color: var(--foreground);
   font-family: var(--font-sans), sans-serif;
 }
+
+/* Light mode section accent rule — thin gradient rule above eyebrows */
+.section-rule::before {
+  content: '';
+  display: block;
+  width: 40px;
+  height: 3px;
+  background: linear-gradient(90deg, #0369a1, #0f766e);
+  border-radius: 9999px;
+  margin-bottom: 0.75rem;
+}
+

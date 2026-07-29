@@ -14,23 +14,23 @@ const About = () => {
   ];
 
   return (
-    <section className="relative w-full py-20 px-4 md:px-8 overflow-hidden bg-zinc-50/50 dark:bg-black/30">
+    <section className="relative w-full py-20 px-4 md:px-8 overflow-hidden bg-white dark:bg-black/30">
       {/* Background Ambient Glow Blobs */}
-      <div className="absolute -top-40 -left-40 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl pointer-events-none" />
-      <div className="absolute -bottom-40 -right-40 w-96 h-96 bg-indigo-500/10 rounded-full blur-3xl pointer-events-none" />
+      <div className="absolute -top-40 -left-40 w-96 h-96 bg-blue-400/5 dark:bg-blue-500/10 rounded-full blur-3xl pointer-events-none" />
+      <div className="absolute -bottom-40 -right-40 w-96 h-96 bg-teal-400/5 dark:bg-indigo-500/10 rounded-full blur-3xl pointer-events-none" />
 
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 0.6 }}
-        className="relative max-w-6xl mx-auto rounded-3xl bg-white/85 dark:bg-zinc-900/45 backdrop-blur-2xl border border-zinc-200/60 dark:border-zinc-800/40 p-6 md:p-10 shadow-xl shadow-zinc-200/40 dark:shadow-none"
+        className="relative max-w-6xl mx-auto rounded-3xl bg-white dark:bg-zinc-900/45 backdrop-blur-2xl border border-slate-100 dark:border-zinc-800/40 p-6 md:p-10 shadow-xl shadow-slate-200/80 dark:shadow-none"
       >
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
           {/* Left Content Column */}
           <div className="lg:col-span-7 flex flex-col gap-6">
             <div className="space-y-2">
-              <span className="text-xs font-bold tracking-wider text-blue-600 dark:text-blue-450 uppercase">
+              <span className="section-rule text-xs font-bold tracking-wider text-blue-700 dark:text-blue-400 uppercase">
                 Who We Are
               </span>
               <h2 className="text-3xl md:text-4xl font-extrabold tracking-tight bg-gradient-to-r from-zinc-950 via-zinc-800 to-zinc-950 dark:from-white dark:via-zinc-200 dark:to-white bg-clip-text text-transparent">
@@ -38,7 +38,7 @@ const About = () => {
               </h2>
             </div>
 
-            <p className="text-sm md:text-base text-zinc-600 dark:text-zinc-300 leading-relaxed text-justify font-normal">
+            <p className="text-sm md:text-base text-slate-600 dark:text-zinc-300 leading-relaxed text-justify font-normal">
               Amaze PMS Pvt Ltd (AMAZE) is a Property Management division of
               ACTION GROUP of Companies founded in the year 2001 by Mr. Subhani
               Abdul a veteran from the Indian Navy, a Certified Security
@@ -57,10 +57,10 @@ const About = () => {
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3.5 mt-2">
               {stats.map((stat, i) => (
                 <div key={i} className="flex items-center gap-3">
-                  <div className="flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-blue-600 dark:bg-blue-500 text-white">
+                  <div className="flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-blue-700 dark:bg-blue-500 text-white">
                     <Check className="h-3.5 w-3.5 stroke-[3]" />
                   </div>
-                  <span className="text-sm font-semibold text-zinc-800 dark:text-zinc-200">
+                  <span className="text-sm font-semibold text-slate-800 dark:text-zinc-200">
                     {stat}
                   </span>
                 </div>
@@ -82,12 +82,12 @@ const About = () => {
             <motion.div
               whileHover={{ scale: 1.01 }}
               transition={{ duration: 0.3 }}
-              className="relative rounded-2xl p-3 bg-white/20 dark:bg-zinc-800/10 border border-white/40 dark:border-zinc-700/20 backdrop-blur-md shadow-inner flex items-center justify-center group"
+              className="relative rounded-2xl p-3 bg-slate-50 dark:bg-zinc-800/10 border border-slate-100 dark:border-zinc-700/20 shadow-md shadow-slate-100 dark:shadow-none flex items-center justify-center group"
             >
               <img
                 src="https://i.ibb.co.com/xbmRHjq/about1.png"
                 alt="Amaze Team"
-                className="w-full h-auto rounded-xl object-cover shadow-md border border-white/20 dark:border-zinc-800/40"
+                className="w-full h-auto rounded-xl object-cover shadow-sm border border-slate-100 dark:border-zinc-800/40"
               />
             </motion.div>
           </div>

@@ -57,21 +57,21 @@ const Contact = () => {
   ];
 
   return (
-    <section id="contact" className="relative w-full py-20 px-4 md:px-8 overflow-hidden bg-zinc-50/50 dark:bg-black/30 border-t border-zinc-200/50 dark:border-zinc-800/30">
+    <section id="contact" className="relative w-full py-20 px-4 md:px-8 overflow-hidden bg-white dark:bg-black/30 border-t border-slate-100 dark:border-zinc-800/30">
       {/* Background Glow Blobs */}
-      <div className="absolute -top-40 -left-40 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl pointer-events-none" />
-      <div className="absolute -bottom-40 -right-40 w-96 h-96 bg-indigo-500/10 rounded-full blur-3xl pointer-events-none" />
+      <div className="absolute -top-40 -left-40 w-96 h-96 bg-blue-400/5 dark:bg-blue-500/10 rounded-full blur-3xl pointer-events-none" />
+      <div className="absolute -bottom-40 -right-40 w-96 h-96 bg-indigo-400/5 dark:bg-indigo-500/10 rounded-full blur-3xl pointer-events-none" />
 
       <div className="max-w-6xl mx-auto">
         {/* Section Heading */}
         <div className="text-center max-w-3xl mx-auto mb-16 space-y-3">
-          <span className="text-xs font-bold tracking-wider text-blue-600 dark:text-blue-450 uppercase">
+          <span className="section-rule text-xs font-bold tracking-wider text-blue-700 dark:text-blue-400 uppercase">
             Get In Touch
           </span>
           <h2 className="text-3xl md:text-4xl font-extrabold tracking-tight bg-gradient-to-r from-zinc-950 via-zinc-800 to-zinc-950 dark:from-white dark:via-zinc-200 dark:to-white bg-clip-text text-transparent">
             Contact Us
           </h2>
-          <p className="text-sm md:text-base text-zinc-500 dark:text-zinc-400 font-normal">
+          <p className="text-sm md:text-base text-slate-500 dark:text-zinc-400 font-normal">
             Have questions about our solutions? Reach out, and we will get back to you shortly.
           </p>
         </div>
@@ -90,13 +90,13 @@ const Contact = () => {
                   whileInView={{ opacity: 1, x: 0 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.4, delay: i * 0.1 }}
-                  className="flex gap-4 p-5 rounded-2xl bg-white/85 dark:bg-zinc-900/45 border border-zinc-200/60 dark:border-zinc-800/40 shadow-sm hover:shadow-md hover:bg-white/95 dark:hover:bg-zinc-900/60 transition-all duration-300"
+                  className="flex gap-4 p-5 rounded-2xl bg-white dark:bg-zinc-900/45 border border-slate-100 dark:border-zinc-800/40 shadow-sm hover:shadow-md hover:bg-white dark:hover:bg-zinc-900/60 transition-all duration-300"
                 >
-                  <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-blue-50 dark:bg-zinc-800/80 border border-blue-100/50 dark:border-zinc-700/50">
-                    <Icon className="h-5 w-5 text-blue-600 dark:text-blue-400" />
+                  <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-blue-50 dark:bg-zinc-800/80 border border-blue-100/80 dark:border-zinc-700/50">
+                    <Icon className="h-5 w-5 text-blue-700 dark:text-blue-400" />
                   </div>
                   <div className="space-y-1">
-                    <h3 className="text-sm font-bold text-zinc-900 dark:text-white">
+                    <h3 className="text-sm font-bold text-slate-900 dark:text-white">
                       {info.title}
                     </h3>
                     <div className="text-xs md:text-sm text-zinc-500 dark:text-zinc-400 space-y-0.5 font-normal">
@@ -125,7 +125,7 @@ const Contact = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
-              className="relative p-6 md:p-8 rounded-3xl bg-white/85 dark:bg-zinc-900/45 backdrop-blur-2xl border border-zinc-200/60 dark:border-zinc-800/40 shadow-xl shadow-zinc-200/20 dark:shadow-none"
+              className="relative p-6 md:p-8 rounded-3xl bg-white dark:bg-zinc-900/45 border border-slate-100 dark:border-zinc-800/40 shadow-xl shadow-slate-200/80 dark:shadow-none"
             >
               <AnimatePresence mode="wait">
                 {!isSubmitted ? (
@@ -149,7 +149,7 @@ const Contact = () => {
                           value={formData.name}
                           onChange={handleChange}
                           placeholder="John Doe"
-                          className="w-full h-11 px-4 rounded-xl border border-zinc-200/80 dark:border-zinc-800/80 bg-white dark:bg-zinc-950/60 text-sm text-zinc-900 dark:text-white placeholder-zinc-400 focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 transition-all shadow-sm"
+                          className="w-full h-11 px-4 rounded-xl border border-slate-200 dark:border-zinc-800/80 bg-white dark:bg-zinc-950/60 text-sm text-slate-900 dark:text-white placeholder-slate-400 focus:outline-none focus:border-blue-600 focus:ring-1 focus:ring-blue-600 transition-all shadow-sm"
                         />
                       </div>
 
@@ -165,7 +165,7 @@ const Contact = () => {
                           value={formData.email}
                           onChange={handleChange}
                           placeholder="john@example.com"
-                          className="w-full h-11 px-4 rounded-xl border border-zinc-200/80 dark:border-zinc-800/80 bg-white dark:bg-zinc-950/60 text-sm text-zinc-900 dark:text-white placeholder-zinc-400 focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 transition-all shadow-sm"
+                          className="w-full h-11 px-4 rounded-xl border border-slate-200 dark:border-zinc-800/80 bg-white dark:bg-zinc-950/60 text-sm text-slate-900 dark:text-white placeholder-slate-400 focus:outline-none focus:border-blue-600 focus:ring-1 focus:ring-blue-600 transition-all shadow-sm"
                         />
                       </div>
                     </div>
@@ -182,7 +182,7 @@ const Contact = () => {
                         value={formData.subject}
                         onChange={handleChange}
                         placeholder="Inquiry about Property Management"
-                        className="w-full h-11 px-4 rounded-xl border border-zinc-200/80 dark:border-zinc-800/80 bg-white dark:bg-zinc-950/60 text-sm text-zinc-900 dark:text-white placeholder-zinc-400 focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 transition-all shadow-sm"
+                        className="w-full h-11 px-4 rounded-xl border border-slate-200 dark:border-zinc-800/80 bg-white dark:bg-zinc-950/60 text-sm text-slate-900 dark:text-white placeholder-slate-400 focus:outline-none focus:border-blue-600 focus:ring-1 focus:ring-blue-600 transition-all shadow-sm"
                       />
                     </div>
 
@@ -198,14 +198,14 @@ const Contact = () => {
                         value={formData.message}
                         onChange={handleChange}
                         placeholder="Please write your inquiry here..."
-                        className="w-full p-4 rounded-xl border border-zinc-200/80 dark:border-zinc-800/80 bg-white dark:bg-zinc-950/60 text-sm text-zinc-900 dark:text-white placeholder-zinc-400 focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 transition-all resize-none shadow-sm"
+                        className="w-full p-4 rounded-xl border border-slate-200 dark:border-zinc-800/80 bg-white dark:bg-zinc-950/60 text-sm text-slate-900 dark:text-white placeholder-slate-400 focus:outline-none focus:border-blue-600 focus:ring-1 focus:ring-blue-600 transition-all resize-none shadow-sm"
                       />
                     </div>
 
                     <button
                       type="submit"
                       disabled={isSubmitting}
-                      className="w-full h-11 rounded-xl bg-gradient-to-r from-blue-600 to-indigo-650 hover:from-blue-500 hover:to-indigo-500 text-white font-semibold shadow-lg shadow-blue-500/20 hover:shadow-xl hover:shadow-blue-500/30 transition-all duration-200 flex items-center justify-center gap-2 cursor-pointer disabled:opacity-75 disabled:cursor-not-allowed"
+                      className="w-full h-11 rounded-xl bg-blue-600  text-white font-semibold shadow-lg shadow-blue-500/20 hover:shadow-xl hover:shadow-blue-500/30 transition-all duration-200 flex items-center justify-center gap-2 cursor-pointer disabled:opacity-75 disabled:cursor-not-allowed"
                     >
                       {isSubmitting ? (
                         <div className="h-5 w-5 border-2 border-white border-t-transparent rounded-full animate-spin" />
