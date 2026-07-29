@@ -4,6 +4,8 @@ A modern, high-performance corporate website built with **Next.js 16 (App
 Router)**, **Tailwind CSS v4**, and **HeroUI** for **Amaze PMS Pvt Ltd**, a
 premier Property Management division of the Action Group of Companies.
 
+**Live Link:** [https://amazepms-pvtltd.vercel.app/](https://amazepms-pvtltd.vercel.app/)
+
 ---
 
 ## 🚀 Tech Stack
