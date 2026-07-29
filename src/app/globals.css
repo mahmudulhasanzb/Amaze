@@ -51,14 +51,3 @@ body {
   font-family: var(--font-sans), sans-serif;
 }
 
-/* Light mode section accent rule — thin gradient rule above eyebrows */
-.section-rule::before {
-  content: '';
-  display: block;
-  width: 40px;
-  height: 3px;
-  background: linear-gradient(90deg, #0369a1, #0f766e);
-  border-radius: 9999px;
-  margin-bottom: 0.75rem;
-}
-

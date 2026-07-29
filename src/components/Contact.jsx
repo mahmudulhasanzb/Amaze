@@ -65,7 +65,7 @@ const Contact = () => {
       <div className="max-w-6xl mx-auto">
         {/* Section Heading */}
         <div className="text-center max-w-3xl mx-auto mb-16 space-y-3">
-          <span className="section-rule text-xs font-bold tracking-wider text-blue-700 dark:text-blue-400 uppercase">
+          <span className=" text-xs font-bold tracking-wider text-blue-700 dark:text-blue-400 uppercase">
             Get In Touch
           </span>
           <h2 className="text-3xl md:text-4xl font-extrabold tracking-tight bg-gradient-to-r from-zinc-950 via-zinc-800 to-zinc-950 dark:from-white dark:via-zinc-200 dark:to-white bg-clip-text text-transparent">

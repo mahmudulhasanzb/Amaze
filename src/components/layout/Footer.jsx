@@ -67,9 +67,10 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="relative w-full bg-white dark:bg-zinc-950 border-t border-slate-100 dark:border-zinc-800/80 pt-16 pb-8 overflow-hidden mt-auto">
+    <footer className="relative w-full bg-slate-50 dark:bg-zinc-950 border-t border-slate-100 dark:border-zinc-800/80 pt-16 pb-8 overflow-hidden mt-auto">
       {/* Background ambient glow */}
-      <div className="absolute top-0 right-1/4 w-96 h-96 bg-blue-500/5 dark:bg-blue-500/3 rounded-full blur-3xl pointer-events-none" />
+      <div className="absolute top-0 right-1/4 w-96 h-96 bg-blue-500/10 dark:bg-blue-500/3 rounded-full blur-3xl pointer-events-none" />
+      <div className="absolute bottom-0 left-1/4 w-96 h-96 bg-teal-500/5 dark:bg-teal-500/2 rounded-full blur-3xl pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-4 md:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8 mb-12">
@@ -202,7 +203,7 @@ const Footer = () => {
         </div>
 
         {/* Bottom copyright row */}
-        <div className="pt-8 border-t border-zinc-200/50 dark:border-zinc-800/60 flex flex-col md:flex-row items-center justify-between gap-4">
+        <div className="pt-8 border-t border-slate-200/60 dark:border-zinc-800/60 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-xs text-zinc-500 dark:text-zinc-400 text-center md:text-left font-normal">
             Copyright © Amaze Property Management | All Right Reserved
           </p>

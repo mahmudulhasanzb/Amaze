@@ -27,10 +27,10 @@ const About = () => {
         className="relative max-w-6xl mx-auto rounded-3xl bg-white dark:bg-zinc-900/45 backdrop-blur-2xl border border-slate-100 dark:border-zinc-800/40 p-6 md:p-10 shadow-xl shadow-slate-200/80 dark:shadow-none"
       >
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
-          {/* Left Content Column */}
+          
           <div className="lg:col-span-7 flex flex-col gap-6">
             <div className="space-y-2">
-              <span className="section-rule text-xs font-bold tracking-wider text-blue-700 dark:text-blue-400 uppercase">
+              <span className="text-xs font-bold tracking-wider text-blue-700 dark:text-blue-400 uppercase">
                 Who We Are
               </span>
               <h2 className="text-3xl md:text-4xl font-extrabold tracking-tight bg-gradient-to-r from-zinc-950 via-zinc-800 to-zinc-950 dark:from-white dark:via-zinc-200 dark:to-white bg-clip-text text-transparent">

@@ -4,7 +4,7 @@ import React from 'react';
 
 const brands = [
   {
-    name: "Acme Corp",
+    name: "DivyaSree",
     logo: (
       <svg className="h-6 w-6 mr-2.5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
         <path strokeLinecap="round" strokeLinejoin="round" d="M12 3v18M3 12h18M5.5 5.5l13 13M18.5 5.5l-13 13" />
@@ -12,7 +12,7 @@ const brands = [
     )
   },
   {
-    name: "Initech",
+    name: "HillCounty",
     logo: (
       <svg className="h-6 w-6 mr-2.5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
         <path strokeLinecap="round" strokeLinejoin="round" d="M4 6h16M4 12h16M4 18h16" />
@@ -20,7 +20,7 @@ const brands = [
     )
   },
   {
-    name: "Hooli",
+    name: "Oliva",
     logo: (
       <svg className="h-6 w-6 mr-2.5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
         <circle cx="12" cy="12" r="9" />
@@ -29,7 +29,7 @@ const brands = [
     )
   },
   {
-    name: "Stark Ind",
+    name: "L&T Techknowledgy Service",
     logo: (
       <svg className="h-6 w-6 mr-2.5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
         <path strokeLinecap="round" strokeLinejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
@@ -37,7 +37,7 @@ const brands = [
     )
   },
   {
-    name: "Globex",
+    name: "JLL",
     logo: (
       <svg className="h-6 w-6 mr-2.5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
         <circle cx="12" cy="12" r="9" />
@@ -46,7 +46,7 @@ const brands = [
     )
   },
   {
-    name: "Umbrella Corp",
+    name: "CBRE",
     logo: (
       <svg className="h-6 w-6 mr-2.5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
         <path strokeLinecap="round" strokeLinejoin="round" d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" />
@@ -76,7 +76,6 @@ const brands = [
 const Marque = () => {
   return (
     <section className="relative w-full py-10 bg-white dark:bg-black/20 border-y border-slate-100 dark:border-zinc-800/30 overflow-hidden">
-      
       {/* Inline styles for keyframes to keep it self-contained */}
       <style>{`
         @keyframes marquee {
@@ -90,17 +89,17 @@ const Marque = () => {
 
       <div className="max-w-7xl mx-auto px-6 md:px-8 mb-6 text-center">
         <span className="text-xs font-bold tracking-widest text-slate-400 dark:text-zinc-500 uppercase">
-          Trusted by Industry Leaders & Innovators
+          Trusted by 200+ valued partners around the India
         </span>
       </div>
 
       {/* Fade Gradients left and right */}
-      <div className="relative w-full flex items-center overflow-hidden py-4
+      <div
+        className="relative w-full flex items-center overflow-hidden py-4
         before:absolute before:left-0 before:top-0 before:z-20 before:h-full before:w-24 before:bg-gradient-to-r before:from-white dark:before:from-zinc-950/20 before:to-transparent before:pointer-events-none
         after:absolute after:right-0 after:top-0 after:z-20 after:h-full after:w-24 after:bg-gradient-to-l after:from-white dark:after:from-zinc-950/20 after:to-transparent after:pointer-events-none"
       >
         <div className="flex w-[200%] gap-12 items-center animate-marquee-slow hover:[animation-play-state:paused]">
-          
           {/* First loop container */}
           <div className="flex justify-around w-1/2 items-center gap-12">
             {brands.map((brand, i) => (
@@ -109,7 +108,9 @@ const Marque = () => {
                 className="flex items-center text-slate-400 dark:text-zinc-450 hover:text-blue-700 dark:hover:text-blue-400 transition-colors duration-300 select-none cursor-pointer"
               >
                 {brand.logo}
-                <span className="text-sm font-bold tracking-tight">{brand.name}</span>
+                <span className="text-sm font-bold tracking-tight">
+                  {brand.name}
+                </span>
               </div>
             ))}
           </div>
@@ -122,14 +123,14 @@ const Marque = () => {
                 className="flex items-center text-slate-400 dark:text-zinc-450 hover:text-blue-700 dark:hover:text-blue-400 transition-colors duration-300 select-none cursor-pointer"
               >
                 {brand.logo}
-                <span className="text-sm font-bold tracking-tight">{brand.name}</span>
+                <span className="text-sm font-bold tracking-tight">
+                  {brand.name}
+                </span>
               </div>
             ))}
           </div>
-
         </div>
       </div>
-      
     </section>
   );
 };
