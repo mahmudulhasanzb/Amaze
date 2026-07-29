@@ -68,13 +68,17 @@ const Navbar = () => {
             <Link
               key={item.name}
               href={item.href}
-              className={`px-3.5 py-2 text-sm font-medium rounded-xl transition-all duration-200 ${
+              className={`relative px-3.5 py-2 text-sm font-medium transition-all duration-255 group/nav ${
                 pathName === item.href
-                  ? 'bg-blue-50/60 text-blue-600 dark:bg-zinc-800/80 dark:text-blue-400'
-                  : 'text-zinc-600 dark:text-zinc-300 hover:text-zinc-900 dark:hover:text-white hover:bg-zinc-100/50 dark:hover:bg-zinc-800/40'
+                  ? 'text-blue-700 dark:text-blue-400 font-semibold'
+                  : 'text-zinc-600 dark:text-zinc-300 hover:text-zinc-950 dark:hover:text-white'
               }`}
             >
-              {item.name}
+              <span>{item.name}</span>
+              {/* Bottom active/hover slide-line */}
+              <span className={`absolute bottom-0.5 left-3.5 right-3.5 h-[2px] bg-gradient-to-r from-blue-600 to-teal-500 rounded-full transition-transform duration-300 origin-left ${
+                pathName === item.href ? 'scale-x-100' : 'scale-x-0 group-hover/nav:scale-x-100'
+              }`} />
             </Link>
           ))}
         </div>
