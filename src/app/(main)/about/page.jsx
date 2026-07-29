@@ -337,7 +337,7 @@ export default function AboutPage() {
                   <span>Sustainable</span>
                 </div>
               </div>
-            </div>
+            </motion.div>
           </div>
         </div>
       </section>
