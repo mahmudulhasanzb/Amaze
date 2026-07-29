@@ -26,13 +26,13 @@ const Navbar = () => {
 
   const navItems = [
     { name: 'Home', href: '/' },
-    { name: 'About Us', href: '#about' },
-    { name: 'Services', href: '#services' },
-    { name: 'Recruitments', href: '#recruitments' },
-    { name: 'Our Strength', href: '#strength' },
-    { name: 'Our Clients', href: '#clients' },
-    { name: 'Gallery', href: '#gallery' },
-    { name: 'Careers', href: '#careers' },
+    { name: 'About Us', href: '/about' },
+    { name: 'Services', href: '/services' },
+    { name: 'Recruitments', href: '/recruitments' },
+    { name: 'Our Strength', href: '/strength' },
+    { name: 'Our Clients', href: '/testimonials' },
+    { name: 'Gallery', href: '/gallery' },
+    { name: 'Careers', href: '/careers' },
   ];
 
   return (
@@ -83,7 +83,7 @@ const Navbar = () => {
         <div className="hidden lg:flex items-center gap-4">
           <ThemeSwitcher />
           <Link
-            href="#contact"
+            href="/#contact"
             className="inline-flex h-10 items-center justify-center px-5 py-2 rounded-xl bg-zinc-950 dark:bg-white text-white dark:text-zinc-950 hover:bg-zinc-800 dark:hover:bg-zinc-100 text-sm font-semibold shadow-sm hover:shadow transition-all duration-200"
           >
             Contact Us
@@ -125,7 +125,7 @@ const Navbar = () => {
               </Link>
             ))}
             <Link
-              href="#contact"
+              href="/#contact"
               onClick={() => setMobileMenuOpen(false)}
               className="mt-2 flex h-11 items-center justify-center rounded-xl bg-zinc-950 dark:bg-white text-white dark:text-zinc-950 text-sm font-semibold shadow"
             >

@@ -38,17 +38,17 @@ const InstagramIcon = (props) => (
 const Footer = () => {
   const menuLinks = [
     { name: 'Home', href: '/' },
-    { name: 'About Us', href: '#about' },
-    { name: 'Services', href: '#services' },
-    { name: 'Our Strength', href: '#strength' },
-    { name: 'Gallery', href: '#gallery' },
+    { name: 'About Us', href: '/about' },
+    { name: 'Services', href: '/services' },
+    { name: 'Our Strength', href: '/strength' },
+    { name: 'Gallery', href: '/gallery' },
   ];
 
   const quickLinks = [
-    { name: 'Our Clients', href: '#clients' },
-    { name: 'Recruitments', href: '#recruitments' },
-    { name: 'Careers', href: '#careers' },
-    { name: 'Contact Us', href: '#contact' },
+    { name: 'Our Clients', href: '/testimonials' },
+    { name: 'Recruitments', href: '/recruitments' },
+    { name: 'Careers', href: '/careers' },
+    { name: 'Contact Us', href: '/#contact' },
   ];
 
   const presence = [
