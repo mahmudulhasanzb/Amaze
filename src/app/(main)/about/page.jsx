@@ -22,6 +22,7 @@ import {
   ChevronRight,
 } from 'lucide-react';
 import Link from 'next/link';
+import { motion } from 'framer-motion';
 
 export default function AboutPage() {
   const stats = [
@@ -56,7 +57,13 @@ export default function AboutPage() {
         <div className="relative max-w-6xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
             {/* Left Content Column */}
-            <div className="lg:col-span-7 flex flex-col gap-6">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+              className="lg:col-span-7 flex flex-col gap-6"
+            >
               <div className="space-y-2">
                 <span className="text-xs font-bold tracking-wider text-blue-700 dark:text-blue-400 uppercase">
                   Who We Are
@@ -106,10 +113,16 @@ export default function AboutPage() {
                   <ChevronRight className="h-4 w-4 group-hover:translate-x-0.5 transition-transform" />
                 </Link>
               </div>
-            </div>
+            </motion.div>
 
             {/* Right Graphic Column: Overlay Composite */}
-            <div className="lg:col-span-5 flex justify-center items-center">
+            <motion.div
+              initial={{ opacity: 0, scale: 0.95 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.15 }}
+              className="lg:col-span-5 flex justify-center items-center"
+            >
               <div className="relative w-full max-w-md h-[340px] md:h-[420px] flex items-center justify-center">
                 {/* Back Shield Logo Card - No padding, white border */}
                 <div className="absolute right-2 md:right-8 top-0 z-10 w-48 md:w-56 overflow-hidden rounded-3xl border-4 border-white dark:border-zinc-800 shadow-2xl hover:scale-[1.02] transition-transform duration-300">
@@ -129,7 +142,7 @@ export default function AboutPage() {
                   />
                 </div>
               </div>
-            </div>
+            </motion.div>
           </div>
         </div>
       </section>
